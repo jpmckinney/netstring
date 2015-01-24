@@ -43,7 +43,7 @@ class Netstring < SimpleDelegator
     unless n[match.end(0) + size] == ','
       raise Error, 'expected "," delimiter'
     end
-    Netstring.new(n, match.end(0), size)
+    new(n, match.end(0), size)
   end
 
   # Initializes a netstring.
