@@ -6,6 +6,8 @@
 [![Coverage Status](https://coveralls.io/repos/jpmckinney/netstring/badge.png)](https://coveralls.io/r/jpmckinney/netstring)
 [![Code Climate](https://codeclimate.com/github/jpmckinney/netstring.png)](https://codeclimate.com/github/jpmckinney/netstring)
 
+See the [netstring](http://cr.yp.to/proto/netstrings.txt) specification for details.
+
 ## Usage
 
 ```ruby
