@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name        = "Netstring"
-  s.version     = "0.0.1"
+  s.name        = "netstring"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["James McKinney"]
   s.homepage    = "http://github.com/jpmckinney/netstring"
