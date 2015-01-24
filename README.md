@@ -16,25 +16,25 @@ require "netstring"
 
 Dump:
 
-```
+```ruby
 netstring = Netstring.dump("xyz") # "3:xyz,"
 ```
 
 Load:
 
-```
+```ruby
 string = Netstring.load("3:xyz,") # "xyz"
 ```
 
 Get the netstring from which the string was loaded:
 
-```
+```ruby
 string.netstring # "3:xyz,"
 ```
 
 Load concatenated netstrings:
 
-```
+```ruby
 netstring = "1:x,3:xyz,"
 string1 = Netstring.load(netstring1) # "x"
 offset = string1.netstring.size
@@ -44,7 +44,7 @@ string2 = Netstring.load(netstring) # "xyz"
 
 Load concatenated netstrings in a loop:
 
-```
+```ruby
 netstring = "1:x,3:xyz,"
 strings = []
 until netstring.empty?
