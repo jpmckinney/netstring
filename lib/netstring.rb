@@ -19,7 +19,7 @@ class Netstring < SimpleDelegator
     unless String === s
       raise Error, "#{s.inspect} is not a String"
     end
-    "#{s.size}:#{s},"
+    "#{s.bytesize}:#{s},"
   end
 
   # Loads a string from a netstring.
@@ -40,7 +40,7 @@ class Netstring < SimpleDelegator
       raise Error, 'bad netstring header'
     end
     size = Integer(match[1])
-    unless n[match.end(0) + size] == ','
+    unless n.byteslice(match.end(0) + size) == ','
       raise Error, 'expected "," delimiter'
     end
     new(n, match.end(0), size)
@@ -54,8 +54,8 @@ class Netstring < SimpleDelegator
   # @param [Integer] start the start of the string in the netstring
   # @param [Integer] length the length of the string in the netstring
   def initialize(n, start, length)
-    super(n[start, length])
+    super(n.byteslice(start, length))
 
-    @netstring = n[0, start + length + 1]
+    @netstring = n.byteslice(0, start + length + 1)
   end
 end
