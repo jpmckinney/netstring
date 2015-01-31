@@ -1,7 +1,7 @@
 # Netstring: A netstring parser and emitter
 
-[![Gem Version](https://badge.fury.io/rb/netstring.svg)](http://badge.fury.io/rb/netstring)
-[![Build Status](https://secure.travis-ci.org/jpmckinney/netstring.png)](http://travis-ci.org/jpmckinney/netstring)
+[![Gem Version](https://badge.fury.io/rb/netstring.svg)](https://badge.fury.io/rb/netstring)
+[![Build Status](https://secure.travis-ci.org/jpmckinney/netstring.png)](https://travis-ci.org/jpmckinney/netstring)
 [![Dependency Status](https://gemnasium.com/jpmckinney/netstring.png)](https://gemnasium.com/jpmckinney/netstring)
 [![Coverage Status](https://coveralls.io/repos/jpmckinney/netstring/badge.png)](https://coveralls.io/r/jpmckinney/netstring)
 [![Code Climate](https://codeclimate.com/github/jpmckinney/netstring.png)](https://codeclimate.com/github/jpmckinney/netstring)

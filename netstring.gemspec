@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version     = "0.0.3"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["James McKinney"]
-  s.homepage    = "http://github.com/jpmckinney/netstring"
+  s.homepage    = "https://github.com/jpmckinney/netstring"
   s.summary     = %q{A netstring parser and emitter}
   s.license     = 'MIT'
 
